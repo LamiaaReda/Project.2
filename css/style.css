@@ -1,0 +1,521 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lora", serif;
+  perspective: 700px;
+  background-color: #7b524439;
+}
+
+:root {
+  width: 80%;
+  margin: auto;
+}
+/*////////////////////////////////////////////// Header //////////////////////////////////////////////*/
+header {
+  width: 100%;
+  min-height: 80px;
+}
+
+.page-header {
+  width: 100%;
+  height: 100%;
+  margin: 30px auto;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 900;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-item,
+.li-icons,
+.icon1 {
+  margin: 0 7px;
+}
+
+.page-header a {
+  text-decoration: none;
+  color: #7b5244;
+}
+
+.logo {
+  flex-basis: 15%;
+}
+
+.header-icons {
+  flex-basis: 20%;
+}
+
+.header-list {
+  flex-basis: 65%;
+}
+
+.header-list li {
+  padding: 5px 10px;
+}
+
+.header-item:hover {
+  animation-name: animation1;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animation1 {
+  0% {
+    border-right: solid #7b5244 3px;
+    border-left: solid #7b5244 3px;
+  }
+  100% {
+    border: solid #7b5244 3px;
+  }
+}
+
+.header-list ul,
+.header-icons ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.header-icons i {
+  font-size: 25px;
+  color: #000;
+}
+
+.icon3 {
+  margin-right: 0;
+}
+
+.for-bag {
+  font-size: 16px;
+}
+
+.show-table {
+  position: relative;
+}
+
+.table {
+  display: flex;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 5;
+  width: 400px;
+  border: solid #7b5244 2px;
+  color: #7b5244;
+  background-color: #ffffff;
+  font-size: 14px;
+  padding: 10px;
+  visibility: hidden;
+}
+
+.show-table:hover .table {
+  visibility: visible;
+  transition-delay: 0.2s;
+}
+
+.tables-itemes span {
+  border-bottom: 1px dotted #7b5244;
+}
+
+/*/////////////////////////////////////////// Main Section ///////////////////////////////////////////*/
+main {
+  width: 100%;
+  margin: 25px auto;
+  position: relative;
+}
+
+.main-banner img {
+  width: 100%;
+}
+
+.main-btn {
+  width: 15%;
+  height: 10%;
+  position: absolute;
+  bottom: 25%;
+  left: 8%;
+  border-radius: 15px;
+  border: none;
+  color: #7b5244;
+  font-size: 17px;
+}
+
+.main-btn:hover {
+  background-color: rgb(255, 255, 255);
+  border: 3px solid #7b5244;
+  outline: 2px solid white;
+}
+
+/*///////////////////////////////////// Special Category Section /////////////////////////////////////*/
+.Special-category {
+  width: 100%;
+  margin: 70px auto;
+}
+
+.Special-category-title,
+.Featured-Products-title {
+  font-size: 19px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+hr {
+  width: 100px;
+  margin: 10px auto;
+  height: 4px;
+  background-color: #7b5244;
+  transition: 1s;
+}
+
+.Special-category-title:hover hr,
+.Featured-Products-title:hover hr {
+  width: 160px;
+}
+
+.Special-category-items {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.Special-item {
+  width: 24%;
+}
+
+.img-item {
+  width: 100%;
+}
+
+.category-details {
+  margin-top: 25px;
+  position: relative;
+}
+
+.category-details p {
+  color: #6a6666;
+  margin-bottom: 5px;
+}
+
+.category-details i {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  text-align: center;
+  padding-top: 3px;
+  width: 30px;
+  height: 30px;
+  background-color: brown;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.Special-item:hover .category-details i {
+  display: block;
+}
+
+.category-items-part2 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 40px auto;
+}
+
+article,
+.discount-category {
+  width: 50%;
+  min-height: 300px;
+}
+
+article {
+  background-color: #f7f3ef;
+  margin-right: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.article-icon {
+  position: absolute;
+  color: #7b5244;
+  font-size: 50px;
+}
+
+.article-title {
+  margin: auto auto 30px 70px;
+}
+
+.article-content {
+  line-height: 27px;
+}
+
+.line {
+  position: absolute;
+  bottom: 1%;
+  right: 3%;
+}
+
+.line span {
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background-color: #7b5244;
+  margin-left: 5px;
+}
+
+.discount-category {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  transform-style: preserve-3d;
+}
+
+.discount {
+  width: 48%;
+  position: relative;
+  transition: 0.5s;
+}
+
+.discount:hover {
+  transform: scale(1.1);
+}
+
+.discount-img {
+  width: 100%;
+  height: 100%;
+}
+
+.discount-details {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.discount-details p {
+  color: #7b5244;
+  font-size: 19px;
+  margin-bottom: 3px;
+}
+
+.special-offers {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.offer {
+  width: 20%;
+  min-height: 120px;
+  text-align: center;
+  border-right: 1px solid #7b5244;
+}
+
+.last-offer {
+  border: none;
+}
+
+.offer-img {
+  height: 55px;
+  background-image: url(../img/service-icon.png);
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
+
+.offer-img1 {
+  background-position: center 5px;
+}
+.offer:hover .offer-img1 {
+  background-position: center -90px;
+}
+
+.offer-img2 {
+  background-position: center -180px;
+}
+.offer:hover .offer-img2 {
+  background-position: center -270px;
+}
+
+.offer-img3 {
+  background-position: center -360px;
+}
+.offer:hover .offer-img3 {
+  background-position: center -450px;
+}
+
+.offer-img4 {
+  background-position: center -550px;
+}
+.offer:hover .offer-img4 {
+  background-position: center -640px;
+}
+
+.offer-img5 {
+  background-position: center -730px;
+}
+.offer:hover .offer-img5 {
+  background-position: center -820px;
+}
+
+.offer-details {
+  margin-top: 7px;
+}
+
+.offer-details p {
+  color: #6a6666;
+  margin-top: 5px;
+}
+
+.hr2 {
+  width: 100%;
+  height: 3px;
+  background-color: #7b5244be;
+  margin-top: 40px;
+}
+
+/*///////////////////////////////////// Featured Products Section /////////////////////////////////////*/
+.Featured-Products {
+  width: 100%;
+  margin: 70px auto;
+}
+
+.Featured-Products-title span {
+  display: inline-block;
+  margin: 20px 15px;
+}
+
+.products {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(3, auto);
+  gap: 40px 10px;
+}
+
+.item {
+  width: 100%;
+  height: 550px;
+  padding-left: 10px;
+}
+
+.product-img {
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+
+.product-img:hover .img2 {
+  z-index: 5;
+  transform: rotateY(180deg);
+  transition: 0.5s;
+}
+
+.product-img:hover .overlay {
+  z-index: 6;
+}
+
+.img1,
+.img2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.img1 {
+  z-index: 3;
+}
+
+.img2 {
+  transform: rotateY(90deg);
+  opacity: 0.9;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.overlay-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay-icons a {
+  text-decoration: none;
+}
+
+.overlay-icons i {
+  font-size: 40px;
+  background-color: #ffffff;
+  color: #7b5244;
+  line-height: 30px;
+  margin: 0 3px;
+  opacity: 0.8;
+}
+
+.product-details {
+  margin: 10px auto;
+}
+
+.active {
+  color: rgb(239, 239, 9);
+}
+
+.item p {
+  margin: 5px auto;
+}
+
+/*///////////////////////////////////// Media Quary /////////////////////////////////////*/
+@media (max-width: 768px) {
+  body {
+    background-color: #7b52445f;
+  }
+  .for-bag {
+    font-size: 10px;
+  }
+  .table {
+    width: 230px;
+  }
+  .main-btn {
+    font-size: 10px;
+  }
+  article,
+  .discount-category {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .category-items-part2 {
+    flex-flow: column wrap;
+  }
+  .offer {
+    padding: 2px 5px;
+  }
+  .products {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (max-width: 567px) {
+  body {
+    background-color: #7b524439;
+  }
+  .header-list ul,
+  .header-icons ul {
+    flex-flow: row wrap;
+  }
+  .products {
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(1, auto);
+  }
+}
